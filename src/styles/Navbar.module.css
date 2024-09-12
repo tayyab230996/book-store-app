@@ -1,0 +1,134 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Left Section (Logo and Links) */
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+  list-style: none;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.navLinks li a:hover {
+  color: #007bff;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdownToggle {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdownToggle:hover {
+  color: #007bff;
+}
+
+/* Dropdown Menu */
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  width: 200px;
+  z-index: 100;
+  border-radius: 4px;
+}
+
+.dropdownMenu li {
+  margin: 10px 0;
+}
+
+.dropdownMenu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.dropdownMenu li a:hover {
+  color: #007bff;
+}
+
+/* Middle Section (Search Bar) */
+.searchContainer {
+  flex-grow: 1;
+  margin: 0 50px;
+}
+
+.searchBar {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Right Section (Icons and Buttons) */
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #555;
+}
+
+.searchButton {
+  background: none; /* No background */
+  border: none; /* No border */
+  color: #333; /* Darker color for the search icon */
+  font-size: 1.1rem;;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .leftSection {
+    margin-bottom: 10px;
+  }
+
+  .searchContainer {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

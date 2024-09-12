@@ -1,0 +1,32 @@
+/* src/styles/BookList.css */
+.view-toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.toggle-icon {
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 15px;
+  color: #007bff;
+}
+
+.toggle-icon.active {
+  color: #0056b3;
+}
+
+.book-list.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.book-list.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

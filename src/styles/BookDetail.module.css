@@ -1,0 +1,175 @@
+/* Book Detail Container */
+.bookDetailsContainer {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #f9f9f9;
+}
+
+/* Card-style for book details */
+.bookDetailsCard {
+  display: flex;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+/* Image Section */
+.bookImage img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Book Info Section */
+.bookInfo {
+  padding-left: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Title & Author */
+.bookTitle {
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.bookAuthors {
+  font-size: 18px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.bookAuthors a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.bookSubtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Meta Info (rating, pages, publisher, year) */
+.bookMeta {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.ratingSection {
+  display: flex;
+  align-items: center;
+}
+
+.starFilled {
+  color:#007bff;
+  margin-right: 5px;
+}
+
+.starEmpty {
+  color: #ddd;
+  margin-right: 5px;
+}
+
+.ratingCount {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.pagesSection {
+  display: flex;
+  align-items: center;
+}
+
+.bookIcon {
+  margin-right: 5px;
+  color: #555;
+}
+
+.publisherSection {
+  font-size: 16px;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.publishDate {
+  margin-left: 5px;
+  color: #555;
+}
+
+/* Description Section */
+.bookDescription {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Add to Playlist Button */
+.addToPlaylist {
+  margin-top: 20px;
+}
+
+.addPlaylistButton {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.addPlaylistButton:hover {
+  background-color: #0056b3;
+}
+
+/* Hover effects for the card */
+.bookDetailsCard:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.more {
+  font-size: 15px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .bookDetailsCard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bookImage img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .bookInfo {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .addPlaylistButton {
+    display: block;
+    margin: 20px auto;
+  }
+}

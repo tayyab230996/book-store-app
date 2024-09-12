@@ -1,0 +1,62 @@
+/* src/styles/Pagination.css */
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif; /* Soft, clean font */
+  margin-top: 20px;
+}
+
+.pagination-summary {
+  color: #666; /* Soft grey tone */
+  font-size: 14px;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+}
+
+.pagination-arrow {
+  background: none;
+  border: none;
+  color:#007bff ;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.pagination-arrow:disabled {
+  color: #ccc; /* Disabled arrow in soft grey */
+  cursor: not-allowed;
+}
+
+.pagination-number {
+  background-color: #f2f2f2; /* Light grey background for numbers */
+  border: none;
+  border-radius: 50%; /* Make numbers round */
+  padding: 8px 12px;
+  margin: 0 5px;
+  font-size: 14px;
+  color: #666; /* Soft color for numbers */
+  cursor: pointer;
+}
+
+.pagination-number.active {
+  background-color: #007bff; /* Blue background for active page */
+  color: white;
+}
+
+.pagination-number:hover {
+  background-color: #e0e0e0; /* Slight hover effect */
+}
+
+.pagination-number.active:hover {
+  background-color: #0056b3; /* Darker blue on hover for active */
+}
+
+.pagination-number:disabled {
+  color: #ccc; /* Disabled page numbers */
+  cursor: not-allowed;
+}
