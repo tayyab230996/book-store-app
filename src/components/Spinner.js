@@ -1,6 +1,5 @@
-// src/components/Spinner.js
-import React from 'react';
-import '../styles/Spinner.css'; // Add necessary CSS
+import React from "react";
+import "../styles/Spinner.css"; // Add necessary CSS
 
 const Spinner = () => {
   return (

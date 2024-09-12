@@ -1,17 +1,22 @@
-// src/components/BookList.js
-import React, { useState } from 'react';
-import { FaThLarge, FaThList } from 'react-icons/fa';
-import BookCard from './BookCard';
-import '../styles/BookList.css';
+import React, { useState } from "react";
+import { FaThLarge, FaThList } from "react-icons/fa";
+import BookCard from "./BookCard";
+import "../styles/BookList.css";
 
 const BookList = ({ books, onAddToPlaylist, onViewDetails }) => {
-  const [view, setView] = useState('grid');
+  const [view, setView] = useState("grid");
 
   return (
     <div>
       <div className="view-toggle">
-        <FaThLarge className={`toggle-icon ${view === 'grid' ? 'active' : ''}`} onClick={() => setView('grid')} />
-        <FaThList className={`toggle-icon ${view === 'list' ? 'active' : ''}`} onClick={() => setView('list')} />
+        <FaThLarge
+          className={`toggle-icon ${view === "grid" ? "active" : ""}`}
+          onClick={() => setView("grid")}
+        />
+        <FaThList
+          className={`toggle-icon ${view === "list" ? "active" : ""}`}
+          onClick={() => setView("list")}
+        />
       </div>
       <div className={`book-list ${view}`}>
         {books.map((book) => (

@@ -1,6 +1,5 @@
-// src/components/PlayList.js
-import React from 'react';
-import '../styles/PlayList.css';
+import React from "react";
+import "../styles/PlayList.css";
 
 const PlayList = ({ playlist, onRemoveFromPlaylist }) => {
   return (

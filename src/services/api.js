@@ -1,7 +1,7 @@
 // src/services/api.js
-import axios from 'axios';
+import axios from "axios";
 
-const BASE_URL = 'https://api.itbook.store/1.0';
+const BASE_URL = "https://api.itbook.store/1.0";
 
 export const fetchNewBooks = () => axios.get(`${BASE_URL}/new`);
 

@@ -1,79 +1,76 @@
-/* src/styles/NavBar.css */
-
 .navbar {
-  background-color: white; /* White background for the NavBar */
-  font-family: Arial, sans-serif; /* Set a clean, sans-serif font */
-  border-bottom: 1px solid #e0e0e0; /* Slight border under navbar for separation */
-  padding: 0.5rem 1.5rem; /* Adjust padding for cleaner spacing */
+  background-color: white;
+  font-family: Arial, sans-serif;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.5rem 1.5rem;
   display: flex;
 }
 
-.navbar-nav{
+.navbar-nav {
   display: flex;
   align-items: center;
 }
 .oreilly-logo {
-  max-height: 30px; /* Control the logo size */
-  margin-right: 1rem; /* Spacing around the logo */
+  max-height: 30px;
+  margin-right: 1rem;
 }
 
-.nav-link, .nav-dropdown  {
-  font-size: 14px; /* Smaller font size for nav links */
-  color: #333; /* Darker grey text for nav links */
+.nav-link,
+.nav-dropdown {
+  font-size: 14px;
+  color: #333;
   padding: 0.5rem 1rem;
 }
 
-.nav-link:hover, .nav-dropdown  {
-  color: #bf1f23; /* O'Reilly red for hover states */
+.nav-link:hover,
+.nav-dropdown {
+  color: #bf1f23;
 }
 
 .nav-dropdown {
-  font-size: 14px; /* Consistent font size in dropdown */
+  font-size: 14px;
 }
 
 .search-form {
   display: flex;
-  justify-content: center; /* Center the search form */
+  justify-content: center;
   width: 100%;
 }
 
 .search-input {
-  width: 300px; /* Wider search input for emphasis */
-  border: 1px solid #ccc; /* Light border to match O'Reilly */
-  border-radius: 4px; /* Slightly rounded edges for modern look */
-  padding: 0.375rem 0.75rem; /* Adjust padding for better spacing */
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.375rem 0.75rem;
 }
 
 .search-button {
-  background: none; /* No background */
-  border: none; /* No border */
-  color: #333; /* Darker color for the search icon */
-  font-size: 1.2rem;;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1.2rem;
 }
 
 .search-button:hover {
-  color: #bf1f23; /* O'Reilly red hover effect */
+  color: #bf1f23;
 }
 
 .profile-icon {
   font-size: 2.5rem;
-  color: #333; /* Dark color for profile icon */
+  color: #333;
   margin-left: 1rem;
   cursor: pointer;
 }
 
-
 .hover-dropdown:hover .dropdown-menu {
   display: block;
-  margin-top: 0; /* Ensures dropdown appears right below */
+  margin-top: 0;
 }
 
-/* Ensure dropdown appears when hovered */
 .hover-dropdown .dropdown-menu {
   display: none;
 }
 
-/* Style adjustments for dropdown items */
 .hover-dropdown .dropdown-item {
   cursor: pointer;
 }

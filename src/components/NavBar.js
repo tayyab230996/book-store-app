@@ -13,10 +13,9 @@ import { Form, Button, FormControl, Navbar } from "react-bootstrap";
 const NavBar = ({ onSearch }) => {
   const [isTopicsOpen, setTopicsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedValue, setSelectedValue] = useState("");
+  // const [selectedValue, setSelectedValue] = useState("");
   const navigate = useNavigate();
 
-  // Toggle dropdown function
   const toggleTopicsDropdown = () => {
     setTopicsOpen(!isTopicsOpen);
   };
@@ -29,12 +28,12 @@ const NavBar = ({ onSearch }) => {
     }
   };
 
-  const handleItemClick = (value) => {
-    console.log("event", value);
-    onSearch(value);
-    setSelectedValue(value);
-    handleSearch(value);
-  };
+  // const handleItemClick = (value) => {
+  //   console.log("event", value);
+  //   onSearch(value);
+  //   setSelectedValue(value);
+  //   handleSearch(value);
+  // };
 
   return (
     <nav className={styles.navbar}>
@@ -54,31 +53,30 @@ const NavBar = ({ onSearch }) => {
             >
               Topics <FontAwesomeIcon icon={faCaretDown} />
             </button>
-            {/* Dropdown menu */}
             {isTopicsOpen && (
               <ul className={styles.dropdownMenu}>
                 <li>
-                  <a href="#" onClick={() => handleItemClick("Database")}>
+                  <a href="/">
                     Cloud Computing
                   </a>
                 </li>
                 <li>
-                  <a href="#">Data Engineering</a>
+                  <a href="/">Data Engineering</a>
                 </li>
                 <li>
-                  <a href="#">Data Science</a>
+                  <a href="/">Data Science</a>
                 </li>
                 <li>
-                  <a href="#">AI & ML</a>
+                  <a href="/">AI & ML</a>
                 </li>
                 <li>
-                  <a href="#">Programming Languages</a>
+                  <a href="/">Programming Languages</a>
                 </li>
               </ul>
             )}
           </li>
           <li>
-            <a href="#">Featured</a>
+            <a href="/">Featured</a>
           </li>
           <li>
             <a href="/playlist">Playlist</a>

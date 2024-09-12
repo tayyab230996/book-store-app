@@ -1,4 +1,3 @@
-// src/components/NavBar.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -7,7 +6,6 @@ import {
   Nav,
   Form,
   Button,
-  NavDropdown,
   FormControl,
 } from "react-bootstrap";
 import { FaSearch, FaUserCircle } from "react-icons/fa";
@@ -17,6 +15,8 @@ const NavBar = ({ onSearch }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedValue, setSelectedValue] = useState("");
   const navigate = useNavigate();
+
+  console.log(selectedValue)
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -28,12 +28,11 @@ const NavBar = ({ onSearch }) => {
 
   const handleItemClick = (value) => {
     setSelectedValue(value);
-    handleSearch(value); // Call parent function to pass the search parameter
+    handleSearch(value);
   };
 
   return (
     <Navbar bg="light" expand="lg" className="navbar">
-      {/* O'Reilly Styled Logo */}
       <Navbar.Brand href="/" className="navbar-brand">
         <img
           src="https://cdn.freelogovectors.net/wp-content/uploads/2022/06/oreilly-logo-freelogovectors.net_.png" // Adjust the path to your local or hosted O'Reilly logo.
@@ -65,7 +64,6 @@ const NavBar = ({ onSearch }) => {
         </Nav.Link>
       </Nav>
 
-      {/* Styled Search Bar */}
       <Form inline onSubmit={handleSearch} className="search-form mx-auto">
         <FormControl
           type="text"
@@ -79,7 +77,6 @@ const NavBar = ({ onSearch }) => {
         </Button>
       </Form>
 
-      {/* User Profile Icon */}
       <FaUserCircle className="profile-icon" />
     </Navbar>
   );
